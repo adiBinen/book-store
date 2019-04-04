@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/helpers.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Miss Book</title>
+</head>
+
+<body>
+    <div id="app">
+        <header-cmp></header-cmp>
+        <user-msg></user-msg>
+        <transition name="fade">
+            <router-view></router-view>
+        </transition>
+    </div>
+
+
+
+    <script src="lib/axios.js"></script>
+    <script src="lib/vue.js"></script>
+    <script src="lib/vue-router.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

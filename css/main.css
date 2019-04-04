@@ -1,0 +1,158 @@
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Pacifico');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+}
+
+img {
+    max-width: 250px;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.header {
+    height: 100px;
+    padding: 0 30px;
+    background-color: gray;
+    color: white;
+    border-bottom: 3px solid black;
+    margin-bottom: 20px;
+}
+
+.header > h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 35px;
+    text-shadow: -1px -1px 10px black;
+}
+
+/* book app */
+
+
+/* book list */
+.book-list {
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    grid-gap: 10px;
+}
+
+
+/* book-preview */
+.book-preview {
+    position: relative;
+    cursor: pointer;
+    height: 350px;
+    width: 250px;
+}
+
+.book-preview:hover .preview-details {
+    opacity: 1;
+}
+
+.preview {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+.preview-details {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #ffffff8c;
+}
+  
+  .container:hover .preview-details {
+    opacity: 0.5;
+  }
+  
+  .preview-details > p {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+
+/* book details */
+.book-details-container {
+    line-height: 20px;
+    margin-bottom: 60px;
+}
+
+.details-container {
+    flex-direction: column;
+}
+
+.img-details {
+    margin-right: 10px;
+}
+
+.goBack {
+    cursor: pointer;
+}
+
+
+/* long text */
+.readMoreLess {
+    cursor: pointer;
+    color: gray;
+    font-size: .7em;
+}
+
+/* about */
+.about > h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+/* nav bar */
+.router-link-active {
+    color: black;
+}
+
+/* review-add */
+.review-add {
+    background-color: #80808096;
+    color: white;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+}
+
+.review-add > h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+
+.form-review {
+    flex-direction: column;
+}
+
+.form-review > button {
+    cursor: pointer;
+    margin-top: 20px;
+    width: 300px;
+    align-self: center;
+    font-family: 'Merriweather', serif;
+    padding: 5px 0;
+}
+
